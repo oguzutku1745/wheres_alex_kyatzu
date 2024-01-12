@@ -11,7 +11,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       dAppName="Where's the Eye?"
       dAppDescription='A friendly wager between friends'
       dAppUrl='https://spot-the-eye.vercel.app/'
-      dAppIconURL={iconImage}
+      dAppIconURL='https://spot-the-eye.vercel.app/kyatzu.png'
     >
       <App />
     </PuzzleWalletProvider>
