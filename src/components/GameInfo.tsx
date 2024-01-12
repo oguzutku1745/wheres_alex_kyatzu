@@ -1,4 +1,4 @@
-import alexHeadImg from '../assets/alex_head.png';
+import alexHeadImg from '../assets/kyatzu.png';
 
 function GameInfo(props: {
   multisig: string;
