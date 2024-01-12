@@ -1,5 +1,5 @@
-import inWeedsImg from '../assets/in_weeds.jpg';
-import behindBuildingImg from '../assets/behind_building.svg';
+import inWeedsImg from '../assets/hoh-river-valley.jpg';
+import behindBuildingImg from '../assets/bakarlar.jpeg';
 import { Answer } from '@state/RecordTypes/wheres_alex_vxxx';
 
 type HideAlexProps = {
@@ -14,13 +14,13 @@ function ChooseAlexLocation({ setAnswer, answer, hiding }: HideAlexProps) {
       <div className='flex gap-5'>
         <AlexButton
           imgSrc={inWeedsImg}
-          text='In the Weeds'
+          text='Into the Forest'
           onClick={() => setAnswer(Answer.InTheWeeds)}
           selected={answer ? answer === Answer.InTheWeeds : undefined}
         />
         <AlexButton
           imgSrc={behindBuildingImg}
-          text='Behind the Building'
+          text='Behind the Board'
           onClick={() => setAnswer(Answer.BehindTheBuilding)}
           selected={answer ? answer === Answer.BehindTheBuilding : undefined}
         />
@@ -30,7 +30,7 @@ function ChooseAlexLocation({ setAnswer, answer, hiding }: HideAlexProps) {
           if (answer === undefined && hiding) {
             return 'Choose where to hide the Eye';
           } else if (hiding) {
-            return `You chose to hide the Eyey ${answer}`;
+            return `You chose to hide the Eye ${answer}`;
           } else {
             return `You think the Eye is ${answer}`;
           }
